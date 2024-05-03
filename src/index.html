@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Yellowjackets follow mouse move.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,78 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="imgBx">
+      <img
+        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_600/https://www.litalopez.com/wp-content/uploads/2022/02/Shauna-2-600x428.png"
+        alt="Shauna Pict"
+      />
     </div>
-  </body>
+    <div class="imgBx">
+      <img
+        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_600/https://www.litalopez.com/wp-content/uploads/2022/02/Natalie-600x428.png"
+        alt="Natalie"
+      />
+    </div>
+    <div class="imgBx">
+      <img
+        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_600/https://www.litalopez.com/wp-content/uploads/2022/02/Taissa-1-600x428.png"
+        alt="Taissa"
+      />
+    </div>
+    <div class="imgBx">
+      <img
+        src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_600/https://www.litalopez.com/wp-content/uploads/2022/02/Misty-600x428.png"
+        alt="Misty Quigley"
+      />
+    </div>
+    <div class="imgBx">
+      <img
+        src="https://geekspin.co/wp-content/uploads/2022/03/Ella-Purnell-as-Jackie-in-Yellowjackets-1024x536.jpg"
+        width="600px"
+        alt="Jackie"
+      />
+    <div/>
+    <div class="imgBx">
+      <img
+        src="https://www.dexerto.com/cdn-cgi/image/width=1080,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/03/27/Collage-Maker-27-Mar-2023-02-04-PM-2506-1024x576.jpg"
+        alt="Vanessa"
+        width="600px"
+      />
+    <div/>
+    <div class="imgBx">
+      <img
+        src="https://www.dexerto.com/cdn-cgi/image/width=1080,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/03/27/Collage-Maker-27-Mar-2023-10-52-AM-8112-1024x576.jpg"
+        alt="Lotie"
+        width="600px"
+      />
+    <div/>
+    <div class="imgBx">
+      <img
+        src="https://www.dexerto.com/cdn-cgi/image/width=1080,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/03/25/Collage-Maker-31-Mar-2023-12-51-PM-4689-1-1024x576.jpg"
+        alt="Jarvis"
+        width="600px"
+      />
+    </div>
+    <div class="imgBx">
+      <img
+        src=" https://www.dexerto.com/cdn-cgi/image/width=1080,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/03/27/1034344_1_0_prm-ben_1024x640-e1679908849897.jpg"
+        alt="Coach Ben Scott"
+        width="600px"
+      />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/
+    libs/gsap/3.1.1/gsap.min.js" 
+    integrity="sha256-cyEXrJKj03YNkpCjPxVBdi7pRJ3EF+okm1oN9Qc4rRY=">
+    </script>
+    <script type="text/javascript">
+      document.addEvenListener("mousemove", e => {
+        gsap.to(".imgBx", {
+          x : e.clientX,
+          y : e.clientY,
+          stagger : -0.1,
+        })
+      })
+    </script>
+
+    </body>
 </html>
